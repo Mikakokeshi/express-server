@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+
+<body>
+	<h1>Quotes</h1>
+	<p>Number:<input type="text" id="num"></p>
+	<p><input type="button" value="Quotes" 　onclick="kingSaid();"></p>
+	<p id="result"></p>
+
+	<script>
+	window.alert()
+		function kingSaid() {
+			var orders = [
+				'デコピンしなさい',
+				'クイズ出しなさい',
+				'ほめちぎりなさい',
+				'ドリンクを注ぎなさい'
+
+			]
+			// 0～n →　Math.floor(Math.random() * （n + 1）)　
+			// 0～n →　Math.floor(Math.random() * orders.length)
+			// length=配列の個数のこと
+
+			var order = orders[Math.floor(Math.random() * topics.length)];　
+			console.log(order);
+		};
+
+	</script>
+</body>
+</html>
